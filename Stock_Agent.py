@@ -73,7 +73,6 @@ retriever = vectorstore.as_retriever(
     search_kwargs={"k": 5}  # K is the amount of chunks to return
 )
 
-
 @tool
 def retriever_tool(query: str) -> str:
     """
